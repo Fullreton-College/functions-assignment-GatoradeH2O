@@ -48,7 +48,7 @@ void input (int& hours24, int& minutes)
 {
   char colon;
 
-  cout << "Enter time in 24 hour format HH:MM:\n"; 
+  cout << "Enter time in 24 hour format HH:MM\n"; 
   cin >> hours24 >> colon >> minutes;
 }
 

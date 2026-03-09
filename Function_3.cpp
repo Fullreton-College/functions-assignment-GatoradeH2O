@@ -49,14 +49,14 @@ void input (int& hours24, int& minutes)
   char colon;
 
   cout << "Enter time in 24 hour format HH:MM:\n"; 
-  cin >> hours >> colon >> minutes;
+  cin >> hours24 >> colon >> minutes;
 }
 
-void output(int hours24, int minutes)
+void output(int hours, int minutes)
 {
   cout << "Time in 24 hour format: \n";
-  cout << hours24 << ":";
-  
+  cout << hours << ":";
+
   if (minutes < 10)
     cout << "0";
 

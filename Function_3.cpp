@@ -1,12 +1,12 @@
 #include <iostream>
-using namspace std;
+using namespace std;
 
-void input( int& hours24, int& minutes);
-void output( int hours, int minutes);
+void input(int& hours24, int& minutes);
+void output(int hours, int minutes);
 
 int main()
 {
-    int timeHours, timeMinutes, waitHours, waitMinutes,finishHours, finishMinutes;
+    int timeHours, timeMinutes, waitHours, waitMinutes, finishHours, finishMinutes;
 
   cout << "Compute completion time from current time and waiting period\n";
   
@@ -44,3 +44,22 @@ int main()
   return 0;
 }
 
+void input (int& hours, int& minutes)
+{
+  char colon;
+
+  cout << "Enter time in 24 hour format HH:MM:\n"; 
+  cin >> hours >> colon >> minutes;
+}
+
+void output(int hours, int minutes)
+{
+  cout << "Time in 24 hour format: \n";
+  cout << hours << ":";
+  
+  if (minutes < 10)
+    cout << "0";
+
+  cout << minutes << endl;
+
+}
